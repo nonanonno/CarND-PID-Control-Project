@@ -97,19 +97,20 @@ still be compilable with cmake and make./
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
 
 # Refrection
-I used the PID parameters; kp = 0.5, ki = 0.001, kd = 20, and the car drove at 50mph.
+I used the PID parameters; kp = 0.2, ki = 0.001, kd = 4, and the car drove at 50mph.
 
-When the parameter kp is set to 0.5 and the others is set to 0, the trajectory diversed as shown in the below graph.
+When the parameter kp is set to 0.2 and the others is set to 0, the trajectory diversed as shown in the below graph.
 
-![img](imgs/p0.5_i0_d0.png)
+![img](imgs/p0.2_i0_d0_400.png)
 
-When the paramers kp and kd is set to 0.5 and 20,  and ki is set to 0, the divergence of the trajectory was reduced.
+When the paramers kp and kd is set to 0.2 and 4,  and ki is set to 0, the divergence of the trajectory was reduced.
 
-![img](imgs/p0.5_i0_d20.png)
+![img](imgs/p0.2_i0_d4_400.png)
 
 However, the cte value does not contact to 0. To solve this probless, I set the parameter ki to 0.001.
 
-![img](imgs/p0.5_i0.001_d20.png)
-
+![img](imgs/p0.2_i0.001_d4_400.png)
 
 For these parameters, I tried manual tuning.
+
+I recorded the video `imgs/video.mp4` that the car can successfully drive around the track.

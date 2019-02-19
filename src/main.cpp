@@ -37,9 +37,9 @@ constexpr T clamp(T v, decltype(v) min, decltype(v) max){
 
 int main(int argc, char **argv) {
   uWS::Hub h;
-  double Kp = 0.5;
+  double Kp = 0.2;
   double Ki = 0.001;
-  double Kd = 20;
+  double Kd = 4;
   double target_speed = 45;
   if (argc != 1) {
     Kp = std::stof(argv[1]);
